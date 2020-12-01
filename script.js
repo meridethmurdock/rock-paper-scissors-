@@ -17,7 +17,8 @@ function RPS() {
   
     var playerChoice = prompt("Rock, paper, scissors!");
     var playerChoice = playerChoice.toLowerCase();
-    const computerChoice = 1;
+    const computerChoice = () => (Math.floor(Math.random() * 3));
+
     
         if (x == 2) {
             alert("You won! I'll remeber this when the robots take over.")
