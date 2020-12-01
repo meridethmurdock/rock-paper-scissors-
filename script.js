@@ -1,4 +1,4 @@
-var yesOrNo = (pompt("Hey! It's your computer here. Want to play a game?"));
+var yesOrNo = (prompt("Hey! It's your computer here. Want to play a game?"));
 var yesOrNo = yesOrNo.toLowerCase();
 
 if (yesOrNo === "yes") {
