@@ -1,4 +1,4 @@
-var yesOrNo = (prompt("Hey! It's your computer here. Want to play a game?"));
+var yesOrNo = (prompt("Hey! It's your computer here. Wat to play a game?"));
 var yesOrNo = yesOrNo.toLowerCase();
 
 if (yesOrNo === "yes") {
@@ -25,40 +25,42 @@ function RPS() {
   
     var playerChoice = prompt("Rock, paper, scissors!");
     var playerChoice = playerChoice.toLowerCase();
-    
-    var computerChoice = () => (Math.floor(Math.random() * 3 + 1));
 
-      if (playerChoice == "rock" && computerChoice() == 1) { 
+    const randomNumber = () => (Math.ceil(Math.random() * 3));
+    var computerChoice = randomNumber();
+
+      if (playerChoice === "rock" && computerChoice === 1) { 
           alert(`Rock does not affect to rock. You have ${x} point(s)!`);
-      } else if (playerChoice == "rock" && computerChoice() == 2) {
+      } else if (playerChoice === "rock" && computerChoice === 2) {
           y++;
           alert(`Rock is covered by paper, rendering it... useless. You have ${x} point(s)!`); 
-      } else if (playerChoice == "rock" && computerChoice() == 3) {
+      } else if (playerChoice === "rock" && computerChoice === 3) {
           x++;
           alert(`Rock smashes scissors to bits! You have ${x} point(s)!`);
-      } else if (playerChoice == "paper" && computerChoice() == 1) {
+      } else if (playerChoice === "paper" && computerChoice === 1) {
           x++;
           alert(`Paper beats rock! You have ${x} point(s)!`);
-      } else if (playerChoice == "paper" && computerChoice() == 2) {
+      } else if (playerChoice === "paper" && computerChoice === 2) {
           alert(`Paper does not affect paper. You have ${x} point(s)!`);
-      } else if (playerChoice == "paper" && computerChoice() == 3) {
+      } else if (playerChoice === "paper" && computerChoice === 3) {
           y++;
           alert(`Paper is shredded by scissors... You have ${x} point(s)!`); 
-      } else if (playerChoice == "scissors" && computerChoice() == 1) {
+      } else if (playerChoice === "scissors" && computerChoice === 1) {
           y++;
           alert(`Scissors loses all purpose to rock... You have ${x} point(s)!`);
-      } else if (playerChoice == "scissors" && computerChoice() == 2) {
+      } else if (playerChoice === "scissors" && computerChoice === 2) {
           x++;
           alert(`Scissors obliterates the paper! You have ${x} point(s)!`);  
-      } else if (playerChoice == "scissors" && computerChoice() == 3) {
+      } else if (playerChoice === "scissors" && computerChoice === 3) {
           alert(`Scissors does not affect scissors. You have ${x} point(s)!`);
       } else {
-          alert("FUUUUCK");
+          alert("Beep boop, computer does not compute.");
       }
     
     }
     
 }
+
 
 
 
